@@ -1,7 +1,7 @@
-# 用户应用函数  
+# 2 用户应用函数  
 用户应用函数包含了入口函数、产品配置，以及上网配置。 
 
-## 入口函数  
+## 2.1 入口函数  
 基于ESP8266的入口函数位于 /app/user/user_main.c。  
 函数说明  
 ***
@@ -28,12 +28,12 @@ void user_init(void)
 }
 ```  
 
-## 产品配置  
+## 2.2 产品配置  
 产品配置主要是配置产品 key，产品 key 是为平台进行服务注册的 key。位于 /app/user/device_config.h 。  
 产品key是一个宏定义，更新相应的产品 key 即可。 
 `#define PANDO_PRODUCT_KEY "(key update here)"`  
 
-## 上网配置  
+## 2.3 上网配置  
 基于ESP8266的上网配置为wifi配置，有两个文件： /app/user/wifi_config.c 以及 /app/user/wifi_config.h 两个文件。  
 **函数说明**  
 ***  
